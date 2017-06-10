@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 50b68b55a8e774054a5fae47719dfb51
+timeCreated: 1497058515
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: amemuchigothic-02
+  fontNames:
+  - amemuchigothic-02
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

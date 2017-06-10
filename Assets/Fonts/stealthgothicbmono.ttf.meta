@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1cff369ca6b6649298de27bda2b4473d
+timeCreated: 1497058617
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: StealthGothicBmono
+  fontNames:
+  - StealthGothicBmono
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

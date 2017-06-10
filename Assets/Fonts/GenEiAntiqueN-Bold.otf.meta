@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fec41a6b1369e45bab11fb5b36478a4a
+timeCreated: 1497058550
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: GenEi Antique N
+  fontNames:
+  - GenEi Antique N
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 072201ebde15a4fedaff526b5e9a2f99, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

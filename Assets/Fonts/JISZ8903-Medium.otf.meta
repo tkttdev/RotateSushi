@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 667b6a0a32f854dd59f0aac8d81b992b
+timeCreated: 1497058576
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JIS Z 8903
+  fontNames:
+  - JIS Z 8903
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
