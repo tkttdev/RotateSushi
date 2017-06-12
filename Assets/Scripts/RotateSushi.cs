@@ -16,6 +16,7 @@ public class RotateSushi : MonoBehaviour {
 	private float t  = 0f;
 	private float speed = 1f;
 	private Vector3 rotateAxis = Vector3.back;
+	private Vector3 initRotate = Vector3.zero;
 	private State state = State.STOP;
 
 	private void Update () {
@@ -43,12 +44,12 @@ public class RotateSushi : MonoBehaviour {
 		rend.material = textMesh.font.material;
 	}
 
-	public void SetSpeed(Slider slider){
-		speed = slider.value;
+	public void SetSpeed(Slider _slider){
+		speed = _slider.value;
 	}
 
 	public void SetRotateAxis(Dropdown _dropdown){
-		gameObject.transform.rotation = Quaternion.Euler (0f, 0f, 0f);
+		gameObject.transform.rotation = Quaternion.Euler (initRotate);
 		rotateAxis = rotateAxises [_dropdown.value];
 	}
 
@@ -58,6 +59,21 @@ public class RotateSushi : MonoBehaviour {
 
 	public void Stop(){
 		state = State.STOP;
-		gameObject.transform.rotation = Quaternion.Euler (0f, 0f, 0f);
+		gameObject.transform.rotation = Quaternion.Euler (initRotate);
+	}
+
+	public void SetInitAngleX(Slider _slider){
+		initRotate = new Vector3 (_slider.value, initRotate.y, initRotate.z);
+		gameObject.transform.rotation = Quaternion.Euler (initRotate);
+	}
+
+	public void SetInitAngleY(Slider _slider){
+		initRotate = new Vector3 (initRotate.x, _slider.value, initRotate.z);
+		gameObject.transform.rotation = Quaternion.Euler (initRotate);
+	}
+
+	public void SetInitAngleZ(Slider _slider){
+		initRotate = new Vector3 (initRotate.x, initRotate.y, _slider.value);
+		gameObject.transform.rotation = Quaternion.Euler (initRotate);
 	}
 }
