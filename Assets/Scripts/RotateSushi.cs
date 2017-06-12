@@ -59,21 +59,29 @@ public class RotateSushi : MonoBehaviour {
 
 	public void Stop(){
 		state = State.STOP;
-		gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		if (state == State.STOP) {
+			gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		}
 	}
 
 	public void SetInitAngleX(Slider _slider){
 		initRotate = new Vector3 (_slider.value, initRotate.y, initRotate.z);
-		gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		if (state == State.STOP) {
+			gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		}
 	}
 
 	public void SetInitAngleY(Slider _slider){
 		initRotate = new Vector3 (initRotate.x, _slider.value, initRotate.z);
-		gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		if (state == State.STOP) {
+			gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		}
 	}
 
 	public void SetInitAngleZ(Slider _slider){
 		initRotate = new Vector3 (initRotate.x, initRotate.y, _slider.value);
-		gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		if (state == State.STOP) {
+			gameObject.transform.rotation = Quaternion.Euler (initRotate);
+		}
 	}
 }
